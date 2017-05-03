@@ -14,3 +14,10 @@ https://github.com/jenkinsci/mesos-plugin
 # Jenkins Plugins
 
 * Mesos Plugin - 0.14.1
+
+
+# Configuration 
+
+Mount /var/jenkins_home to your local volume for persistant storage of configuration 
+
+Under the Cloud Configuration set mesos library to /usr/local/lib/libmesos.so
