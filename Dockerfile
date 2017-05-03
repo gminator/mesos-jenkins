@@ -20,6 +20,6 @@ ADD https://github.com/jenkinsci/mesos-plugin/archive/mesos-0.14.1.zip /tmp/meso
 RUN cd /tmp/ &&\
     unzip mesos-plugin.zip &&\
     cd /tmp/mesos-plugin-mesos-0.14.1/ && \
-    mvn hpi:run
+    mvn package
 
 USER ${user}
