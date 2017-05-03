@@ -17,10 +17,7 @@ RUN dpkg -i /tmp/mesos.deb
 
 ADD https://github.com/jenkinsci/mesos-plugin/archive/mesos-0.14.1.zip /tmp/mesos-plugin.zip
 
-RUN cd /tmp/ &&\
-    unzip mesos-plugin.zip &&\
-    cd /tmp/mesos-plugin-mesos-0.14.1/ && \
-    mvn package &&\
-    cp target/mesos.hpi /usr/share/jenkins/ref/init.groovy.d/
+ADD https://raw.githubusercontent.com/gminator/mesos-jenkins/master/plugins.py /tmp/plugins.py
+RUN cd /tmp/ && python plugins.py
 
 USER ${user}
