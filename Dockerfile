@@ -6,7 +6,7 @@ FROM jenkins:latest
 
 USER root
 
-RUN  apt-get install -y maven git curl
+RUN  apt-get install -y maven git curl mesos 
 
 ADD https://github.com/jenkinsci/mesos-plugin/archive/master.zip /tmp/mesos-plugin 
 
