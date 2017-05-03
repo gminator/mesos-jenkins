@@ -1,3 +1,5 @@
+#Install Some Default Plugins
+import os
 
 plugins = {
         "mesos" : "0.14.1",
@@ -15,5 +17,4 @@ for plugin in plugins:
         folder = "%s-%s" % (plugin, version)
         src = "https://github.com/jenkinsci/%s-plugin/archive/%s-%s.zip" % (plugin, plugin, version)
         print "Installing %s-%s" % (plugin, version)
-        os.system("wget %s && unzip %s.zip && cd %s-plugin-%s && mvn package && cp target/%s.hpi $JENKINS_HOME/plugins/" % (src, folder, plugin, f$
-
+        os.system("wget %s && unzip %s.zip && cd %s-plugin-%s && mvn package && cp target/%s.hpi $JENKINS_HOME/plugins/" % (src, folder, plugin, folder,plugin))
