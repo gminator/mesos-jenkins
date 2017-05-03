@@ -20,6 +20,7 @@ ADD https://github.com/jenkinsci/mesos-plugin/archive/mesos-0.14.1.zip /tmp/meso
 RUN cd /tmp/ &&\
     unzip mesos-plugin.zip &&\
     cd /tmp/mesos-plugin-mesos-0.14.1/ && \
-    mvn package
+    mvn package &&\
+    cp target/mesos.hpi /usr/share/jenkins/ref/init.groovy.d/
 
 USER ${user}
