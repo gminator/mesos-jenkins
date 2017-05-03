@@ -4,8 +4,8 @@
 
 FROM jenkins:latest
 
+ADD https://github.com/jenkinsci/mesos-plugin/archive/master.zip /tmp/mesos-plugin 
 
-RUN git clone https://github.com/jenkinsci/mesos-plugin.git &&\
-        cd mesos-plugin && \
-        mvn hpi:run
+RUN cd /tmp/mesos-plugin && \
+    mvn hpi:run
 
