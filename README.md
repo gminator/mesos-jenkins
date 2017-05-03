@@ -1,2 +1,16 @@
-# mesos-jenkins
-Jenkins With Mesos Plugin
+# Jenkins & Mesos
+
+Deploy  Jenkins with mesos integration, this gives it the ability to dynamicly deploy and tear down slaves using a mesos cluster.
+
+https://wiki.jenkins-ci.org/display/JENKINS/Mesos+Plugin
+
+https://github.com/jenkinsci/mesos-plugin
+
+# Package Versions
+
+* Jenkins - 2.46.2
+* Mesos - 1.0-2
+
+# Jenkins Plugins
+
+* Mesos Plugin - 0.14.1
