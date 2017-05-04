@@ -14,6 +14,11 @@ https://github.com/jenkinsci/mesos-plugin
 # Jenkins Plugins
 
 * Mesos Plugin - 0.14.1
+* hidden-parameter - 0.0.4
+* greenballs - 1.15
+* envinject - 2.0
+* slack - 2.2
+* ssh-agent - 1.15
 
 
 # Configuration 
