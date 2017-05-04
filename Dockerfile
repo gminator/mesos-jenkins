@@ -17,7 +17,7 @@ RUN dpkg -i /tmp/mesos.deb
 
 ADD https://github.com/jenkinsci/mesos-plugin/archive/mesos-0.14.1.zip /tmp/mesos-plugin.zip
 
-ADD https://raw.githubusercontent.com/gminator/mesos-jenkins/master/plugins.py /tmp/plugins.py
-RUN cd /tmp/ && python plugins.py
+RUN /usr/local/bin/install-plugins.sh mesos hidden-parameter greenballs envinject slack ssh-agent
 
 USER ${user}
+ 
